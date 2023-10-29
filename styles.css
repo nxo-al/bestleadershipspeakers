@@ -1,5 +1,8 @@
 body {
-    margin: 0;
+    margin-left: 9%;
+    margin-right: 9%;
+    margin-top: 1%;
+    margin-bottom: 0;
     font-family: Lato, sans-serif;
     height: 3000px;
     width: auto;
@@ -8,8 +11,6 @@ body {
 nav {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    margin-left: 10%;
-    margin-right: 10%;
     width: auto;
 }
 
@@ -24,11 +25,12 @@ h2 {
 }
 
 p {
-    margin: 10px;
+    margin-left: 0;
 }
 
 .ul-best-speakers {
     margin-top: 0;
+    padding-left: 1.3rem;
 }
 
 .criteria {
@@ -41,20 +43,14 @@ p {
     object-fit: cover;
 }
 
-ul .li {
+ul .bullet-pts {
     list-style-type: disc;
 }
 
-.best-speaker,
-.worst-speaker {
-    margin-left: 10%;
-    margin-right: 10%;
-}
 
 .speaker-list {
     margin: 0 auto;
-    margin-top: 30px;
-    max-width: 80%;
+    width: 100%;
     font-family: Lato, sans-serif;
     border: 0.1px solid rgb(224, 224, 224);
     border-radius: 8px;
@@ -65,6 +61,11 @@ ul .li {
     box-shadow: 4px 4px 13px 1px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 4px 4px 13px 1px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 4px 4px 13px 1px rgba(0, 0, 0, 0.75);
+}
+
+.speaker-profile {
+    width: 100%;
+    height: auto;
 }
 
 .rate {
@@ -123,13 +124,13 @@ span img {
 }
 
 .first-column img {
-    height: 300px;
+    height: 80%;
     object-fit: cover;
     width: 100%;
 }
 
 .second-column {
-    margin: auto 0;
+    margin: auto;
     height: auto;
     text-align: center;
 
@@ -142,6 +143,8 @@ span img {
     justify-content: center;
     height: 100%;
     width: auto;
+    margin-bottom: 5%;
+    padding: 0;
 }
 
 .second-column,
@@ -174,8 +177,8 @@ h3 {
     display: flex;
     flex-direction: column;
     text-align: left;
-    width: auto;
-    height: auto;
+    margin: 0;
+    padding: 0;
 
 }
 
@@ -197,33 +200,31 @@ h3 {
     border-radius: 8px;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 900px) {
     .speaker-profile {
         width: 100%;
     }
 
     .speaker-list {
         height: auto;
-        width: 80%;
+        width: 100%;
         display: grid;
         grid-template-columns: 1fr 0.5fr;
         grid-template-rows: 1fr;
         row-gap: 0px;
         column-gap: 0px;
-        max-width: 80%;
+    }
+
+    .first-column img {
+        object-fit: cover;
+        width: 100%;
+        height: auto;
     }
 
     div>.third-column:last-of-type {
         height: auto;
-        padding-top: 10px;
         margin: 0;
         grid-column: 1 / -1;
-    }
-
-    .best-speaker,
-    .worst-speaker {
-        margin-left: 90px;
-        margin-right: 90px;
     }
 
     .visit-btn {
