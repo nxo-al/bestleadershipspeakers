@@ -47,6 +47,10 @@ ul .bullet-pts {
     list-style-type: disc;
 }
 
+.ul-list li {
+    padding: 6px;
+}
+
 
 .speaker-list {
     margin: 0 auto;
@@ -61,11 +65,6 @@ ul .bullet-pts {
     box-shadow: 4px 4px 13px 1px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 4px 4px 13px 1px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 4px 4px 13px 1px rgba(0, 0, 0, 0.75);
-}
-
-.speaker-profile {
-    width: 100%;
-    height: auto;
 }
 
 .rate {
@@ -103,7 +102,7 @@ ul .bullet-pts {
     border-top-left-radius: 0px;
     background-color: #ee7c5d;
     display: flex;
-    width: 100%;
+    width: auto;
     align-items: center;
     justify-content: center;
 }
@@ -124,8 +123,8 @@ span img {
 }
 
 .first-column img {
-    height: fit-content;
-    object-fit: cover;
+    height: 300px;
+    object-fit: contain;
     width: 100%;
 }
 
